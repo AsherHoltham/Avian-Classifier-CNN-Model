@@ -16,6 +16,9 @@ test_len = set_len - validation_len - train_len
 
 df.set_index(df.columns[1], inplace=True)
 for f in df:
-    if(df.loc(f) < train_len): p.converter(f, 'train')
-    elif(df.loc(f) < train_len + validation_len): p.converter(f, 'validation')
-    else: p.converter(f, 'test_data'): p.converter(f, 'test')
+    data = p.converter(f)
+    l = int(df.loc[f])
+
+    if(df.loc(f) < train_len): p.allocater(data, f, l, 'train')
+    elif(df.loc(f) < train_len + validation_len): p.allocater(data, f, l, 'validation')
+    else: p.allocater(data, f, l, 'test')
