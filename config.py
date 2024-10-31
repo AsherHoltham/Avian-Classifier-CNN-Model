@@ -15,8 +15,6 @@ class Config:
         self.log_path = os.path.join(self.output_path, 'logs')
 
 
-
-
         self.learning_rate = 1e-3
         self.batch_size = 16
         self.epochs = 10
