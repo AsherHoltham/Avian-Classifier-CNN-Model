@@ -17,4 +17,4 @@ def parser(file):
 
     o_csv = i2_csv.sample(frac=1).reset_index(drop=True)
 
-    o_csv.to_csv("output.csv", index=False)
+    o_csv.to_csv("data.csv", index=False)
