@@ -1,6 +1,6 @@
-print("Initializing data parsing scripts for .WAV database")
+print("Initializing Data Parsing/Preprocessing Scripts")
 
-from .csv_parsing import parser as csv_parser
-from .data_cleaning import 
+from .csv_parser import parser as parser
+from .wav_converter import converter as converter
 
-__all__ = ['csv_parser', ]
+__all__ = ['parser', 'converter']

@@ -1,7 +1,7 @@
 import pandas as pd 
 
-def parser():
-    i_csv = pd.read_csv("/Users/asheraugustusholtham/Desktop/data/bird_songs_metadata.csv")
+def parser(file):
+    i_csv = pd.read_csv(file)
 
     label_col = i_csv["species"]
     filename = i_csv["filename"]
